@@ -1,4 +1,4 @@
-# *** EV Charging Station Simulation ***
+# ** EV Charging Station Simulation **
 
 ## *** Description: *** This project simulates an electric vehicle (EV) charging station using LEDs and buttons. It mimics a real charging process where LEDs indicate the charging status, and the buttons allow you to start, stop, or reset the sequence.
 
