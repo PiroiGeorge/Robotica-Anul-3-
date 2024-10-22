@@ -1,23 +1,34 @@
-Description: I’m building a simulation of an electric vehicle charging station using LEDs and buttons. The project involves managing button inputs (with debouncing) and coordinating how the LEDs behave to mimic the real-life charging process. When the charging starts, the LEDs light up progressively, and different actions, like starting, stopping, or resetting, trigger specific sequences for the LEDs and buttons to follow, just like a real charging station.
+EV Charging Station Simulation
+This project simulates an electric vehicle (EV) charging station using LEDs and buttons. It mimics a real charging process where LEDs indicate the charging status, and the buttons allow you to start, stop, or reset the sequence.
 
-Components: 
-~ Breadboard
-~ 6x 100-ohm Resistors
-~ 4x Blue LEDs
-~ 1x RGB LED
-~ 2x Buttons
-~ 2x 10K Resistors
-~ Jumper Wires 
+🛠️ Components
+Breadboard
+6x 100-ohm Resistors
+4x Blue LEDs (to indicate charging progress)
+1x RGB LED (represents the station status)
+2x Buttons (for start and stop/reset controls)
+2x 10K-ohm Resistors (for button debouncing)
+Jumper Wires (for connections)
+📖 Project Functionality
+Station Free (RGB LED Green): Initially, the RGB LED is green, indicating that the station is free.
+
+Start Charging (RGB LED Red): When the start button is pressed, the RGB LED turns red, signaling that the station is occupied. The charging sequence begins, with the blue LEDs lighting up progressively. Each LED represents 25% of the charging process.
+
+Charging Progress: The 4 blue LEDs light up sequentially, blinking for 3 seconds before staying solid. The next LED then blinks, and so on, until all LEDs are solid, indicating the charging is complete.
+
+Stop Charging: If the stop button is pressed and held for at least 1 second during charging, the sequence stops early. All LEDs will blink 3 times to indicate the end, and the RGB LED will turn green, showing the station is free again.
+
+Completion: Once charging is complete, the 4 blue LEDs blink 3 times at a slower rate, then turn off. The RGB LED turns green to show the station is free.
+
+⚙️ Circuit Schematic
 
 
-Picture: 
-![T1Robotica](https://github.com/user-attachments/assets/a8d814e0-a7f1-4e4c-a56c-ea0b2eee82f0)
+This schematic shows the connections between the components on the breadboard, ensuring correct functionality.
 
-Video:
-https://github.com/user-attachments/assets/dba9e6e1-6491-411c-853a-9c09a952a6ea
+🎬 Media
+🖼️ Simulation Picture:
 
 
-TinkerCad scheme:
-![Mighty Crift](https://github.com/user-attachments/assets/ea8d5a9b-986b-46db-93d8-6027a3e08c6c)
-
+📹 Demo Video:
+Watch the simulation in action
 
